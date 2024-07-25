@@ -27,12 +27,12 @@ def pascal_triangle(n: int) -> List:
     return matrix
 
 
-def print_triangle(triangle):
-    """
-    Print the triangle
-    """
-    for row in triangle:
-        print("[{}]".format(",".join([str(x) for x in row])))
+# def print_triangle(triangle):
+#     """
+#     Print the triangle
+#     """
+#     for row in triangle:
+#         print("[{}]".format(",".join([str(x) for x in row])))
 
 
-print_triangle(pascal_triangle(5))
+# print_triangle(pascal_triangle(5))
