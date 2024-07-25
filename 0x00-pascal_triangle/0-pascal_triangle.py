@@ -13,13 +13,16 @@ def pascal_triangle(n: int) -> List[List]:
     if n <= 0:
         return []
     
-    arr = [[0 for x in range(n)] for y in range(n)] 
+    # empty matrix generated to store pascal triangle
+    matrix = []
 
     for row in range(0, n):
-        for i in range(0, row + 1):
-            if (i == 0 or i == row ):
-                arr[row][i] = 1
+        temp = []
+        for col in range(0, row + 1):
+            if (col == 0 or col == row ):
+                temp.append(1)
             else:
-                arr[row][i] = (arr[row - 1][i - 1] + arr[row - 1][i])
+                temp.append(matrix[row - 1][col - 1] + matrix[row - 1][col])
+        matrix.append(temp)
 
-    return arr
+    return matrix
