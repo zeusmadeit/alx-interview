@@ -19,10 +19,7 @@ def pascal_triangle(n: int) -> List[List]:
         for i in range(0, row + 1):
             if (i == 0 or i == row ):
                 arr[row][i] = 1
-                # print(arr[row][i], end = " ")
             else:
                 arr[row][i] = (arr[row - 1][i - 1] + arr[row - 1][i])
-                # print(arr[row][i], end = " ")
-        # print("\n")
-    return arr
 
+    return arr
