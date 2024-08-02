@@ -4,7 +4,7 @@
 from typing import List
 
 
-def canUnlockAll(boxes: List[List]) -> bool:
+def canUnlockAll(boxes: List[List[int]]) -> bool:
     """Determines if all the boxes can be opened,
     the first box - boxes[0] is unlocked.
 
