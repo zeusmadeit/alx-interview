@@ -20,7 +20,7 @@ def minOperations(n: int) -> int:
         return 0
 
     while char_len < n:
-        # If char_len is a factor of n or 1, we copy all
+        # If char_len is a factor of n or char_len == 1, we copy all
         if n % char_len == 0:
             clipboard = char_len
             min_operations += 1
